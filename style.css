@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #d2dae2;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1e272e;
+}
+
+nav {
+  position: fixed;
+  z-index: 9;
+  min-height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #1e272e;
+}
+
+nav img {
+  width: 60px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  gap: 10px;
+}
+
+nav ul li a {
+  color: #d2dae2;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+#home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#home h1 {
+  margin-bottom: 20px;
+  font-size: 4em;
+}
+
+p.content-description {
+  font-size: 1em;
+  max-width: 900px;
+  letter-spacing: 1.5px;
+  color: rgb(137, 157, 178);
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.btn-global-1 {
+  font-size: 1.1em;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid #f7f1e3;
+  color: #f7f1e3;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+}
+
+.btn-global-1:hover {
+  background-color: #f7f1e3;
+  color: #1e272e;
+}
+
+.icon-size {
+  height: 20px;
+  width: 20px;
+  color: #f7f1e3;
+}
+
+#about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-list span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #f7f1e3;
+  color: #f7f1e3;
+  font-size: 0.8em;
+}
+
+.tech-list-2 span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #f7f1e3;
+  color: #f7f1e3;
+  font-size: 0.8em;
+}
+
+table tr {
+  height: 40px;
+}
+
+table td {
+  min-width: 130px !important;
+}
+
+.image-profile {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #f7f1e3;
+  border-radius: 20px 0 20px 0;
+}
+
+.image-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 20px 0;
+}
+
+#experience {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#experience .experience-wrapper {
+  display: flex;
+}
+
+#experience .experience-wrapper .experience-navigation {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#experience .experience-wrapper .experience-navigation span {
+  cursor: pointer;
+  color: rgb(137, 157, 178);
+  padding: 10px 20px;
+  border-left: 2px solid transparent;
+}
+
+.exp-active {
+  color: #f7f1e3 !important;
+  border-left: 2px solid #f7f1e3 !important;
+}
+
+#experience-content .experience {
+  display: none;
+}
+
+.show-experience {
+  display: block !important;
+}
+
+#experience-content .experience ul li {
+  color: rgb(137, 157, 178);
+  line-height: 30px;
+}
+
+#work {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#work .work-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#work .image-wrapper {
+  width: 48%;
+}
+
+#work .work-description {
+  width: 48%;
+}
+
+#work .work-description p {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #222e36;
+}
+
+#work .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#contact a {
+  color: #222e36;
+  text-decoration: none;
+  font-size: 1em;
+  background-color: #f7f1e3;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  color: #1e272e;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+footer {
+  min-height: 12vh;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  color: rgb(137, 157, 178);
+  font-weight: 300;
+}
+
+/* Media Query */
+@media only screen and (max-width: 560px) {
+  nav div:nth-child(2) {
+    display: none;
+  }
+}
