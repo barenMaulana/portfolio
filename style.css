@@ -286,4 +286,66 @@ footer p {
   nav div:nth-child(2) {
     display: none;
   }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  #home h1 {
+    font-size: 1.5em;
+  }
+
+  #home p {
+    font-size: 0.8em;
+    text-align: justify;
+  }
+
+  #home .btn-global-1 {
+    font-size: 0.8em;
+  }
+
+  #about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #about p {
+    font-size: 0.8em;
+  }
+
+  #about .image-profile {
+    display: none;
+  }
+
+  #experience .experience-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #experience .experience-wrapper .experience-navigation {
+    margin-bottom: 30px;
+  }
+
+  #work {
+    margin-top: 50px;
+  }
+
+  #work .work-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #work .image-wrapper {
+    width: 100%;
+  }
+
+  #work .work-description {
+    width: 100%;
+  }
 }
