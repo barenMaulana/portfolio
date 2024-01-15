@@ -348,4 +348,17 @@ footer p {
   #work .work-description {
     width: 100%;
   }
+
+  #about {
+    min-height: auto !important;
+  }
+
+  #experience {
+    margin-top: 100px;
+  }
+
+  #contact {
+    min-height: auto !important;
+    margin-bottom: 100px;
+  }
 }
