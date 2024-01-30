@@ -19,4 +19,21 @@ nav_meatguy.addEventListener("click", function () {
   experience_contents.childNodes[1].classList.remove("show-experience");
 });
 
+// check day or night
+const date = new Date();
+const hour = date.getHours();
+
+// get element by id night-animal and night-animal-2
+// show when night
+const night_animal = document.getElementById("night-animal");
+const night_animal_2 = document.getElementById("night-animal-2");
+
+if (hour >= 18 || hour <= 6) {
+  night_animal.classList.add("show-night-animal");
+  night_animal_2.classList.add("show-night-animal");
+} else {
+  night_animal.classList.remove("show-night-animal");
+  night_animal_2.classList.remove("show-night-animal");
+}
+
 AOS.init();

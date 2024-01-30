@@ -281,6 +281,136 @@ footer p {
   font-weight: 300;
 }
 
+/* night animation */
+.show-night-animal {
+  display: block !important;
+}
+
+#night-animal-2 {
+  display: none;
+  position: absolute;
+  right: 25%;
+  top: 73%;
+}
+
+#night-animal {
+  display: none;
+  position: absolute;
+  top: 30%;
+}
+
+.loader {
+  height: 50px;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.dot-two {
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+  font-size: 36px;
+}
+
+.dot-one,
+.dot-three {
+  background-color: #fff;
+  height: 80px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  animation: flap-wings 1s infinite ease-in-out;
+}
+
+.dot-two {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: flap-wings 1s infinite ease-in-out;
+  animation-delay: 0.1s;
+  color: #000;
+  font-weight: 800;
+}
+
+.dot-two::before,
+.dot-two::after {
+  content: "";
+  position: absolute !important;
+  background-color: #fff;
+}
+
+.dot-two::before {
+  height: 60px;
+  width: 30px;
+  bottom: 40px;
+  left: 1px;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-20deg);
+}
+
+.dot-two::after {
+  height: 60px;
+  width: 30px;
+  bottom: 40px;
+  left: 39px;
+  transform: rotate(26deg);
+  border-radius: 50% 50% 0 0;
+}
+
+.dot-one::before,
+.dot-one::after,
+.dot-three::before,
+.dot-three::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+}
+
+.dot-one::before,
+.dot-three::before {
+  height: 60px;
+  width: 40px;
+  top: 25px;
+  left: 0;
+  background-color: #1e272e;
+  /*chnage this if u need dark mode to #212121 if need light mode #e8e8e8*/
+  border-radius: 50% 50% 0 0;
+}
+
+#night-animal-2 .dot-two {
+  background-color: #000;
+  color: #fff;
+}
+#night-animal-2 .dot-two::before,
+#night-animal-2 .dot-two::after {
+  background-color: #000;
+}
+#night-animal-2 .dot-one,
+#night-animal-2 .dot-three {
+  background-color: #000;
+}
+
+@keyframes flap-wings {
+  0%,
+  100% {
+    transform: translateY(0);
+    color: #000;
+  }
+
+  50% {
+    transform: translateY(-20px);
+    color: #fff;
+  }
+}
+
 /* Media Query */
 @media only screen and (max-width: 560px) {
   nav div:nth-child(2) {
@@ -360,5 +490,17 @@ footer p {
   #contact {
     min-height: auto !important;
     margin-bottom: 100px;
+  }
+
+  #night-animal-2 {
+    position: absolute;
+    right: -50px;
+    top: 80%;
+  }
+
+  #night-animal {
+    position: absolute;
+    top: 90%;
+    left: -100px;
   }
 }
